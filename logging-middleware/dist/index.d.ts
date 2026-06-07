@@ -1,2 +1,2 @@
 export { Log } from "./logger";
-export type { Stack, Level, Package } from "./types";
+export type { Stack, Package } from "./types";
