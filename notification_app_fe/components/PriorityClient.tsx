@@ -15,7 +15,7 @@ export default function PriorityClient() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetchNotifications({ limit: 100 })
+    fetchNotifications()
       .then((data) => setAll(data.notifications ?? []))
       .catch(() => setError("Failed to load notifications. Check your token."))
       .finally(() => setLoading(false));

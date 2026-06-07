@@ -25,7 +25,7 @@ export default function NotificationsClient() {
     async function load() {
       try {
         setLoading(true);
-        const data = await fetchNotifications({ limit: 100 });
+        const data = await fetchNotifications();
         if (cancelled) return;
 
         const incoming = data.notifications ?? [];
